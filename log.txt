@@ -1,0 +1,110 @@
+Cidades: A, B, C, D, E, F, G, H, I, L, M, N, O, P, R, S, T, U, V, Z
+Total: 20
+
+Cidade atual: S
+
+Filhos: [0, 5, 12, 14]
+
+Analisando cidade A ...
+A incluído na borda
+- Id: 0
+- Pai: S
+- Custo atual: 140
+- Estimativa: 506
+
+Analisando cidade F ...
+F incluído na borda
+- Id: 5
+- Pai: S
+- Custo atual: 99
+- Estimativa: 275
+
+Analisando cidade O ...
+O incluído na borda
+- Id: 12
+- Pai: S
+- Custo atual: 151
+- Estimativa: 531
+
+Analisando cidade R ...
+R incluído na borda
+- Id: 14
+- Pai: S
+- Custo atual: 80
+- Estimativa: 273
+
+Nova borda: [12, 0, 5, 14]
+
+=====================================
+
+Cidade atual: R
+
+Filhos: [2, 13, 15]
+
+Analisando cidade C ...
+C incluído na borda
+- Id: 2
+- Pai: R
+- Custo atual: 226
+- Estimativa: 386
+
+Analisando cidade P ...
+P incluído na borda
+- Id: 13
+- Pai: R
+- Custo atual: 177
+- Estimativa: 278
+
+Analisando cidade S ...
+S já explorado ou incluído.
+
+Nova borda: [12, 0, 2, 13, 5]
+
+=====================================
+
+Cidade atual: F
+
+Filhos: [1, 15]
+
+Analisando cidade B ...
+B incluído na borda
+- Id: 1
+- Pai: F
+- Custo atual: 310
+- Estimativa: 310
+
+Analisando cidade S ...
+S já explorado ou incluído.
+
+Nova borda: [12, 0, 2, 1, 13]
+
+=====================================
+
+Cidade atual: P
+
+Filhos: [1, 2, 14]
+
+Analisando cidade B ...
+B atualizado com um custo menor
+- Id: 1
+- Pai: P
+- Custo atual: 278
+- Estimativa: 278
+
+Analisando cidade C ...
+C já explorado ou incluído.
+
+Analisando cidade R ...
+R já explorado ou incluído.
+
+Nova borda: [12, 0, 2, 1]
+
+=====================================
+
+Cidade atual: B
+
+Objetivo encontrado!!!
+
+Caminho: S -> R -> P -> B
+Custo total: 278
+

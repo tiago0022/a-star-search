@@ -1,2 +1,2 @@
-# a-star-search
-Laboratório de Inteligência Artificial - busca A*
+# Busca A*
+Laboratório de Inteligência Artificial
