@@ -1,110 +1,132 @@
-Cidades: A, B, C, D, E, F, G, H, I, L, M, N, O, P, R, S, T, U, V, Z
+Cidades: Arad, Bucharest, Cralova, Dobreta, Eforie, Fagaras, Giurgiu, Hirsova, Iasi, Lugoj, Mehadia, Neamt, Oradea, Pitesti, Rimnicu Vikea, Sibiu, Timisoara, Urziceni, Vaslui, Zerind
 Total: 20
 
-Cidade atual: S
+Cidade atual: Lugoj
 
-Filhos: [0, 5, 12, 14]
+Vizinhos: [10, 16]
 
-Analisando cidade A ...
-A incluído na borda
-- Id: 0
-- Pai: S
-- Custo atual: 140
-- Estimativa: 506
+Analisando cidade Mehadia ...
+Mehadia incluído na borda
+- Id: 10
+- Pai: Lugoj
+- Custo atual: 70
+- Estimativa: 311
 
-Analisando cidade F ...
-F incluído na borda
-- Id: 5
-- Pai: S
-- Custo atual: 99
-- Estimativa: 275
+Analisando cidade Timisoara ...
+Timisoara incluído na borda
+- Id: 16
+- Pai: Lugoj
+- Custo atual: 111
+- Estimativa: 440
 
-Analisando cidade O ...
-O incluído na borda
-- Id: 12
-- Pai: S
-- Custo atual: 151
-- Estimativa: 531
-
-Analisando cidade R ...
-R incluído na borda
-- Id: 14
-- Pai: S
-- Custo atual: 80
-- Estimativa: 273
-
-Nova borda: [12, 0, 5, 14]
+Nova borda: [16, 10]
 
 =====================================
 
-Cidade atual: R
+Cidade atual: Mehadia
 
-Filhos: [2, 13, 15]
+Vizinhos: [3, 9]
 
-Analisando cidade C ...
-C incluído na borda
+Analisando cidade Dobreta ...
+Dobreta incluído na borda
+- Id: 3
+- Pai: Mehadia
+- Custo atual: 145
+- Estimativa: 387
+
+Analisando cidade Lugoj ...
+Lugoj já explorado ou incluído.
+
+Nova borda: [16, 3]
+
+=====================================
+
+Cidade atual: Dobreta
+
+Vizinhos: [2, 10]
+
+Analisando cidade Cralova ...
+Cralova incluído na borda
 - Id: 2
-- Pai: R
-- Custo atual: 226
-- Estimativa: 386
+- Pai: Dobreta
+- Custo atual: 265
+- Estimativa: 425
 
-Analisando cidade P ...
-P incluído na borda
+Analisando cidade Mehadia ...
+Mehadia já explorado ou incluído.
+
+Nova borda: [16, 2]
+
+=====================================
+
+Cidade atual: Cralova
+
+Vizinhos: [3, 13, 14]
+
+Analisando cidade Dobreta ...
+Dobreta já explorado ou incluído.
+
+Analisando cidade Pitesti ...
+Pitesti incluído na borda
 - Id: 13
-- Pai: R
-- Custo atual: 177
-- Estimativa: 278
+- Pai: Cralova
+- Custo atual: 403
+- Estimativa: 504
 
-Analisando cidade S ...
-S já explorado ou incluído.
+Analisando cidade Rimnicu Vikea ...
+Rimnicu Vikea incluído na borda
+- Id: 14
+- Pai: Cralova
+- Custo atual: 411
+- Estimativa: 604
 
-Nova borda: [12, 0, 2, 13, 5]
+Nova borda: [14, 13, 16]
 
 =====================================
 
-Cidade atual: F
+Cidade atual: Timisoara
 
-Filhos: [1, 15]
+Vizinhos: [0, 9]
 
-Analisando cidade B ...
-B incluído na borda
+Analisando cidade Arad ...
+Arad incluído na borda
+- Id: 0
+- Pai: Timisoara
+- Custo atual: 229
+- Estimativa: 595
+
+Analisando cidade Lugoj ...
+Lugoj já explorado ou incluído.
+
+Nova borda: [14, 0, 13]
+
+=====================================
+
+Cidade atual: Pitesti
+
+Vizinhos: [1, 2, 14]
+
+Analisando cidade Bucharest ...
+Bucharest incluído na borda
 - Id: 1
-- Pai: F
-- Custo atual: 310
-- Estimativa: 310
+- Pai: Pitesti
+- Custo atual: 504
+- Estimativa: 504
 
-Analisando cidade S ...
-S já explorado ou incluído.
+Analisando cidade Cralova ...
+Cralova já explorado ou incluído.
 
-Nova borda: [12, 0, 2, 1, 13]
+Analisando cidade Rimnicu Vikea ...
+Rimnicu Vikea já explorado ou incluído.
 
-=====================================
-
-Cidade atual: P
-
-Filhos: [1, 2, 14]
-
-Analisando cidade B ...
-B atualizado com um custo menor
-- Id: 1
-- Pai: P
-- Custo atual: 278
-- Estimativa: 278
-
-Analisando cidade C ...
-C já explorado ou incluído.
-
-Analisando cidade R ...
-R já explorado ou incluído.
-
-Nova borda: [12, 0, 2, 1]
+Nova borda: [14, 0, 1]
 
 =====================================
 
-Cidade atual: B
+Cidade atual: Bucharest
 
 Objetivo encontrado!!!
 
-Caminho: S -> R -> P -> B
-Custo total: 278
+Caminho: Lugoj -> Mehadia -> Dobreta -> Cralova -> Pitesti -> Bucharest
+Custo total: 504
 

@@ -33,7 +33,7 @@ while(True):
         print()
         exit(0)
 
-    print("Filhos:", currentNode.children)
+    print("Vizinhos:", currentNode.children)
     print()
 
     explored.append(currentNode)
