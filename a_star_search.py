@@ -5,10 +5,10 @@ from data_structure import readMap, isEmpty, insertInBorder, Node, printPath
 
 nodeList = readMap()
 
-if(sys.argv.__len__() > 1):
+if(sys.argv.__len__() > 1 and sys.argv[1] != '>'):
     initialNode = next(node for node in nodeList if node.name == sys.argv[1])
 else:
-    initialNode = next(node for node in nodeList if node.name == 'L')
+    initialNode = next(node for node in nodeList if node.name == 'Lugoj')
 
 initialNode.cost = 0
 
